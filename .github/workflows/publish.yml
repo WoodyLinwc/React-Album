@@ -1,0 +1,11 @@
+on: push
+
+jobs: 
+  job1: 
+    steps:
+    - run: ls
+    - run: pwd
+  
+  job2:
+    steps:
+    - run: node --version
