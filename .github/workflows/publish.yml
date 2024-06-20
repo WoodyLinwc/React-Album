@@ -2,8 +2,15 @@ on: push
 
 jobs: 
   npm-build: 
-    runs-on: ubuntu-latest
+    - name: Environment
+      runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v4
-    - run: npm install
-    - run: npm run build
+    - name: Read Repo Content
+      uses: actions/checkout@v4
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Wrap the Project
+      run: npm run build
