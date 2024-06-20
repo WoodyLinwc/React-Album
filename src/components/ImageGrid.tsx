@@ -1,13 +1,11 @@
-// ImageGrid.tsx
-export {};
-
-// Your actual component code follows
 import React from 'react';
 
 const ImageGrid = () => {
-    // Component logic
     return (
-        // JSX code
+        <div>
+            <h1>Image Grid Component</h1>
+            <p>Some JSX content here...</p>
+        </div>
     );
 };
 
