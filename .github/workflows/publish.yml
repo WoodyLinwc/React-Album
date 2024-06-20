@@ -1,17 +1,18 @@
 name: Wrap React Project
-on: push
+
+on: 
+  push:
 
 jobs: 
   npm-build: 
-      name: Environment
-      runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
-    - name: Read Repo Content
+    - name: Checkout Repository
       uses: actions/checkout@v4
 
     - name: Install Dependencies
       run: npm install
 
-    - name: Wrap the Project
+    - name: Build the Project
       run: npm run build
