@@ -1,8 +1,9 @@
+name: Wrap React Project
 on: push
 
 jobs: 
   npm-build: 
-    - name: Environment
+      name: Environment
       runs-on: ubuntu-latest
 
     steps:
