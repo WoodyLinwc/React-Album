@@ -8,15 +8,15 @@
     npx create-react-app React-Album --template typescript
     ```
 - Typescript
+
 - GitHub Action
     ```
     cd .github/workflows/publish.yml
     ```
 - Tailwind CSS
-    ```
-    npm install -D tailwindcss postcss autoprefixer
-    npx tailwindcss init -p
-    ```
+
+    [Tailwind CSS Installation](https://tailwindcss.com/docs/installation)
+    
 - Daisy UI
     ```
     npm i -D daisyui@latest
