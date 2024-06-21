@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import ThemeChange from './components/ThemeChange';
+import ImageCarousel from './components/ImageCarousel';
 
 function App() {
   return (
@@ -47,6 +48,11 @@ function App() {
         </div>
 
         <ThemeChange />
+      </div>
+
+
+      <div style={{ padding: '10%' }}>
+        <ImageCarousel />
       </div>
 
     </>
