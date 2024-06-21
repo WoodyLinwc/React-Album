@@ -1,4 +1,4 @@
-name: Wrap React Project💻
+name: Wrap React Project 💻
 
 on: 
   push:
@@ -11,15 +11,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository🔍
+    - name: Checkout Repository 🔍
       uses: actions/checkout@v4
 
-    - name: Install Dependencies and Build the Project📖
+    - name: Install Dependencies and Build the Project 📖
       run: | 
         npm install
         npm run build
 
-    - name: Deploy🚀
+    - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages
