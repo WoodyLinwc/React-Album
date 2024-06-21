@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Carousel */
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 350px;
+}
