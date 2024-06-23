@@ -18,7 +18,7 @@ declare const require: {
     ): ContextModule;
 };
 
-const Example: React.FC = () => {
+const ImageCarousel: React.FC = () => {
     // Dynamically import all modules that match a specific pattern from a directory
     const importAll = (r: ContextModule): string[] => r.keys().map((key) => r(key) as string);
     
@@ -51,4 +51,4 @@ const Example: React.FC = () => {
     );
 };
 
-export default Example;
+export default ImageCarousel;
