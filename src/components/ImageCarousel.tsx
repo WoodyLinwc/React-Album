@@ -39,14 +39,15 @@ const Example: React.FC = () => {
     const shuffledImages = useMemo(() => shuffleArray(allImages), [allImages]);
 
     return (
-        <Slide autoplay={true} pauseOnHover={false}>
-            {shuffledImages.map((image, index) => (
-                <div key={index} className="each-slide-effect">
-                    <div style={{ 'backgroundImage': `url(${image})` }}>
+        <div>
+            <Slide slidesToScroll={3} slidesToShow={3} indicators={true} autoplay={true} pauseOnHover={false}>
+                {shuffledImages.map((image, index) => (
+                    <div key={index} className="each-slide-effect" style={{ padding: '0 10px' }}>
+                        <img src={image} alt={`Slide ${index + 1}`} style={{ width: '100%' }} />
                     </div>
-                </div>
-            ))}
-        </Slide>
+                ))}
+            </Slide>
+        </div>
     );
 };
 

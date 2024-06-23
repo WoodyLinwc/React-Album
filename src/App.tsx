@@ -51,7 +51,7 @@ function App() {
       </div>
 
 
-      <div style={{ padding: '10%' }}>
+      <div style={{ padding: '10%', marginTop: '-50px' }}>
         <ImageCarousel />
       </div>
 
