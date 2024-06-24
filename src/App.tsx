@@ -8,7 +8,7 @@ function App() {
     <>
       <div className="navbar bg-base-100">
         <div className="flex-1">
-          <a href="/" className="btn btn-ghost text-xl">Woody Lin's Photography Album</a>
+          <a href="/" className="btn btn-ghost text-xl">My Personal Website</a>
         </div>
 
         <div className="flex-none">
