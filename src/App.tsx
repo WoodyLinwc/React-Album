@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import ThemeChange from './components/ThemeChange';
-import ImageCarousel from './components/ImageCarousel';
+import ResponsiveCarousel from './components/ResponsiveCarousel';
 
 function App() {
   return (
@@ -51,8 +51,8 @@ function App() {
       </div>
 
 
-      <div style={{ padding: '10%', marginTop: '-50px' }}>
-        <ImageCarousel />
+      <div >
+      <ResponsiveCarousel />
       </div>
 
     </>
