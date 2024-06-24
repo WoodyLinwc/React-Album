@@ -54,6 +54,15 @@ function App() {
       <ResponsiveCarousel />
       </div>
 
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <button 
+          className="btn"
+          onClick={() => window.location.reload()}
+        >
+          Refresh Page
+        </button>
+      </div>
+
     </>
   );
 }
