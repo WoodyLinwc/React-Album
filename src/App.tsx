@@ -13,7 +13,6 @@ function App() {
 
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
-            <li><a href="#link1">Link</a></li>
             <li>
               <details>
                 <summary>Parent</summary>
