@@ -15,10 +15,9 @@ function App() {
           <ul className="menu menu-horizontal px-1">
             <li>
               <details>
-                <summary>Parent</summary>
+                <summary>Album</summary>
                 <ul className="p-2 bg-base-100 rounded-t-none">
-                  <li><a href="#link1">Link 1</a></li>
-                  <li><a href="#link2">Link 2</a></li>
+                  <li><a href="https://woodylinwc.github.io/photo">More Pictures!</a></li>
                 </ul>
               </details>
             </li>
@@ -30,19 +29,18 @@ function App() {
             <div className="w-10 rounded-full">
               <img
                 alt="Tailwind CSS Navbar component"
-                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                src="https://i.imgur.com/5ZOrfhw.jpg"
               />
             </div>
           </div>
           <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
             <li>
-              <a href="#profile" className="justify-between">
-                Profile
+              <a href="https://github.com/WoodyLinwc" className="justify-between">
+                GitHub
                 <span className="badge">New</span>
               </a>
             </li>
-            <li><a href="#settings">Settings</a></li>
-            <li><a href="#logout">Logout</a></li>
+            <li><a href="https://www.linkedin.com/in/woody-lin-32ab48161/">LinkedIn</a></li>
           </ul>
         </div>
 
