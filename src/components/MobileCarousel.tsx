@@ -19,7 +19,7 @@ declare const require: {
     ): ContextModule;
 };
 
-const VerticalCarousel: React.FC = () => {
+const MobileCarousel: React.FC = () => {
     // Dynamically import all modules that match a specific pattern from a directory
     // r is the parameter name
     // : ContextModule specifies that r should be of type ContextModule
@@ -44,10 +44,10 @@ const VerticalCarousel: React.FC = () => {
 
     return (
         <div>
-            <Slide vertical slidesToScroll={3} slidesToShow={3} indicators={true} autoplay={true} pauseOnHover={false}>
+            <Slide indicators={true} autoplay={true} pauseOnHover={false}>
                 {shuffledImages.map((image, index) => (
-                    <div key={index} className="each-slide-effect">
-                        <img src={image} alt={`Slide ${index + 1}`} style={{ width: '90%' }} />
+                    <div key={index} className="each-slide-effect" style={{ padding: '0 10px' }}>
+                        <img src={image} alt={`Slide ${index + 1}`} style={{ width: '100%' }} />
                     </div>
                 ))}
             </Slide>
@@ -55,4 +55,4 @@ const VerticalCarousel: React.FC = () => {
     );
 };
 
-export default VerticalCarousel;
+export default MobileCarousel;

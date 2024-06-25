@@ -1,7 +1,8 @@
 import React from 'react';
 import useWindowSize from '../hooks/useWindowSize';
 import ImageCarousel from './ImageCarousel';
-import VerticalCarousel from './VerticalCarousel';
+import MobileCarousel from './MobileCarousel';
+// import VerticalCarousel from './VerticalCarousel';
 
 const ResponsiveCarousel: React.FC = () => {
   const windowSize = useWindowSize();
@@ -11,12 +12,12 @@ const ResponsiveCarousel: React.FC = () => {
 
   const containerStyle = {
     padding: '10%',
-    ...(isMobile ? {} : { marginTop: '-50px' })
+    ...(isMobile ? {marginTop: '10px'} : { marginTop: '-50px' })
   };
 
   return (
     <div style={containerStyle}>
-      {isMobile ? <VerticalCarousel /> : <ImageCarousel />}
+      {isMobile ? <MobileCarousel /> : <ImageCarousel />}
     </div>
   );
 };
