@@ -1,6 +1,9 @@
 # React Album
 
 ## Description
+This website is fully built on React and Daisy UI (Tailwind CSS). Every time I make a push on the project, the GitHub Action will automatically `npm install` all the dependencies and generates a GitHub Page based on the react `build` folder.
+
+https://woodylinwc.github.io/React-Album/
 
 ## Technologies
 - ReactJS
@@ -27,15 +30,25 @@
     ```
 
 ## Features
-- Dynamically loading the image carousel based on screen size
+- Dynamically adjusting the image carousel based on screen size.
 
-![phone view](./public/logo192.png)
+![web view](./public/demo/laptop.png)
+
+![phone view](./public/demo/mobile.jpg)
+
+- Support light and dark mode (Daisy UI).
+
+![dark mode](./public/demo/dark.jpg)
+
+## License 
+MIT
 
 
-# Todo
+
+<!-- # Todo
 - Make a refresh button
 - Refine the phone view
-- Upload some demo images
+- Upload some demo images -->
 
 
 
